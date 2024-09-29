@@ -1,0 +1,287 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-image: url(images/bg6.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+h1 {
+    font-size: 80px;
+    text-decoration: overline;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 40px;
+    color: antiquewhite;
+}
+
+h4, h1, h2, h3 {
+    text-align: center;
+}
+
+p, .description {
+    font-size: 20px;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+}
+
+.text {
+    margin: 20px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    list-style: none;
+}
+
+nav ul li a {
+    width: 70px;
+    height: 40px;
+    padding: 15px;
+    margin: 25px;
+    font-size: 16px;
+    color: white; 
+    transition: 0.2s;
+    text-transform: uppercase;
+    background-color: #04435a;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: 0.2s;
+}
+
+a:visited {
+    color: white;
+}
+
+.aboutus {
+    align-items: center;
+    width: 85%;
+    padding: 10px;
+    margin: 15px 0 0 100px;
+    background-color: rgba(12, 25, 80, 0.6);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.branch {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.branch h2 {
+    color: #333;
+}
+
+.branch p {
+    color: #666;
+}
+
+.branch .contact-info {
+    margin-top: 10px;
+}
+
+.branch .contact-info p {
+    margin: 5px 0;
+}
+
+.product-details {
+    background-color: rgba(4, 67, 90, 0.5); 
+    height: 460px;
+    width: 80%;
+    padding: 15px;
+    margin: 0 0 50px 100px;
+}
+
+.product-image img {
+    height: 400px;
+    width: 500px;
+    margin: 20px 20px 0 50px;
+    float: left;
+}
+
+.product-description {
+    margin: 30px 0 0 50px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+.contact {
+    width: 100%;
+    padding: 75px 0 50px 0;
+    text-align: center;
+    background-color: rgba(12, 25, 80, 0.6);
+}
+
+.contact h2, 
+.contact p {
+    color: white;
+}
+
+.contact p {
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    max-width: 1100px;
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.message textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.contact-details input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.message button {
+    color: #1d3d5f;
+    border: none;
+    border-radius: 5px;
+    background: lightblue;
+    width: 140px;
+    height: 40px;
+    margin: 40px auto 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message button:hover {
+    background: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.service-form {
+    background-color: rgba(4, 67, 90, 0.5);
+    width: 80%;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 8px;
+}
+
+.service-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-form fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.service-form legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.service-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.service-form input[type="text"],
+.service-form input[type="email"],
+.service-form input[type="tel"],
+.service-form select,
+.service-form input[type="date"],
+.service-form input[type="file"],
+.service-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.service-form input[type="radio"],
+.service-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.service-form .form-submit {
+    text-align: center;
+}
+
+.service-form button {
+    background-color: #04435a;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service-form button:hover {
+    background-color: #022f44;
+    color: #ffd700;
+}

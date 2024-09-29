@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cece-Gamers - Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src='script.js'></script>
+</head>
+<body class="services">
+    <h1>Cece-Gamers</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquire.html">Enquire</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <h2>Our Services</h2>
+    <div class="services-description">
+        <p>At Cece-Gamers, we offer a range of services to enhance your gaming experience. Whether you need assistance with console setup, game installations, or repairs, our team is here to help.</p>
+    </div>
+
+    <section class="service-form">
+        <form action="" method="POST" >
+           
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g., 0712345678" required>
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Type of Service</legend>
+                
+                <label>
+                    <input type="radio" name="service_type" value="Console Repair" required>
+                    Console Repair
+                </label>
+                <label>
+                    <input type="radio" name="service_type" value="Game Installation">
+                    Game Installation
+                </label>
+                <label>
+                    <input type="radio" name="service_type" value="Accessory Setup">
+                    Accessory Setup
+                </label>
+                <label>
+                    <input type="radio" name="service_type" value="Technical Support">
+                    Technical Support
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select Your Product</legend>
+                
+                <label for="product">Choose a Product:</label>
+                <select id="product" name="product" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="PlayStation 3">PlayStation 3</option>
+                    <option value="PlayStation 4">PlayStation 4</option>
+                    <option value="PlayStation 5">PlayStation 5</option>
+                    <option value="Games">Games</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Services</legend>
+                
+                <label>
+                    <input type="checkbox" name="additional_services[]" value="Software Update">
+                    Software Update
+                </label>
+                <label>
+                    <input type="checkbox" name="additional_services[]" value="Data Transfer">
+                    Data Transfer
+                </label>
+                <label>
+                    <input type="checkbox" name="additional_services[]" value="Custom Configuration">
+                    Custom Configuration
+                </label>
+                <label>
+                    <input type="checkbox" name="additional_services[]" value="Warranty Extension">
+                    Warranty Extension
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment Date</legend>
+                
+                <label for="appointment">Select a Date:</label>
+                <input type="date" id="appointment" name="appointment_date" required>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Upload Files</legend>
+                
+                <label for="file_upload">Attach Reference Files:</label>
+                <input type="file" id="file_upload" name="file_upload" accept=".jpg, .jpeg, .png, .pdf">
+                <small>Accepted formats: JPG, PNG, PDF. Max size: 5MB.</small>
+            </fieldset>
+
+            <div class="form-submit">
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="copyright">
+        This site &copy; 2024 Cece-Gamers
+    </div> 
+</body>
+</html>
